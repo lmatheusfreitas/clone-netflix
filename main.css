@@ -1,0 +1,223 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*elementos base*/
+
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    background-color: var(--preta);
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+header .container_1 {
+    display: flex;
+    align-items: center;
+  
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+header .logo img {
+    width: 140px;
+    cursor: pointer;
+}
+
+header nav {
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+header nav a {
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    transition: 0.5s ease all;
+}
+
+
+/*filme principal*/
+
+.filme-principal {
+    background: url(img/trailer\ \(1\).gif);
+    height: 420px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    line-height: 20px;
+    width: 30%;
+    color: #fff;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #fff;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.container_1 {
+    margin-left: 30px;
+}
+
+.filme-principal .container_1 {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel1 {
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.carrosel2 {
+    margin: 5px;
+    margin-top: 10px;
+}
+
+
+h4 {
+    color: #fff;
+}
+
+#myFooter{
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    margin-top: 50px;
+}
+
+#myFooter a{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    transition: 0.3s ease all;
+}
+
+.footer-copyright{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.container{
+    display: flex;
+  
+    margin-right: 30px;
+}
+
+#myFooter .footer-social {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+.logo_footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    header {
+        height: 120px;
+        display: flex;
+        background: #000;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    header .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        position: relative;
+    }
+    header nav {
+        margin-left: 0;
+    }
+    .filme-principal .descricao {
+        display: none;
+    }
+    .botao {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .descricao {
+        width: 50%;
+    }
+}
